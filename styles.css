@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#moving-button {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #e9e9e9;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 2px solid #c5c5c5;
+  cursor: pointer;
+}
+
+#moving-button::before {
+  content: "Catch me!";
+  display: block;
+  text-align: center;
+}
+
+#moving-button:hover {
+  background-color: #c5c5c5;
+}
