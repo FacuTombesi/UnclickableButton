@@ -1,4 +1,5 @@
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,4 +28,93 @@ body {
 
 #moving-button:hover {
   background-color: #c5c5c5;
+}
+
+.message {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #FFF;
+  width: 100%;
+  height: 80%;
+}
+
+.message-content p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.message-content p:first-of-type {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.message-close {
+  color: #AAA;
+  position: fixed;
+  left: 95%;
+  top: 0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.message-close:hover,
+.message-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mobile-message {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  padding: 180px 0;
+  font-size: 18px;
+  z-index: 9999;
+}
+
+.mobile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.mobile-message p {
+  margin: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+  #moving-button {
+    font-size: 24px;
+    padding: 20px 28px;
+    border-radius: 25px;
+  }
+
+  #moving-button::before {
+    content: "Touch me!";
+  }
+
+  .mobile-message {
+    display: block;
+  }
 }
