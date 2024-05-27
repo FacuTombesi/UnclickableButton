@@ -100,7 +100,46 @@ body {
 
 .mobile-message p {
   margin: 0;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.github_logo {
+  height: 1.5rem;
+  margin: 2px 5px;
+}
+
+.github_logo:hover {
+  content: url("./assets/iconGITHUB\(pink\).png");
+}
+
+.linkedin_logo {
+  height: 1.5rem;
+  margin: 2px 5px;
+}
+
+.linkedin_logo:hover {
+  content: url("./assets/iconLINKEDIN\(pink\).png");
+}
+
+.portfolio_logo {
+  height: 2.4rem;
 }
 
 @media screen and (max-width: 768px) {
